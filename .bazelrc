@@ -1,0 +1,8 @@
+common --announce_rc
+try-import %workspace%/markers/unconditional.bazelrc
+try-import-if-bazel-version >=9.0.0 %workspace%/markers/ge-9-final.bazelrc
+try-import-if-bazel-version >=9.0.0-0 %workspace%/markers/ge-9-zero.bazelrc
+try-import-if-bazel-version >=9.0.0-rc.1 %workspace%/markers/ge-9-rc-dot-1.bazelrc
+try-import-if-bazel-version <9.0.0 %workspace%/markers/lt-9-final.bazelrc
+try-import-if-bazel-version >=10.0.0 %workspace%/markers/ge-10-final.bazelrc
+try-import-if-bazel-version >=10.0.0-0 %workspace%/markers/ge-10-zero.bazelrc

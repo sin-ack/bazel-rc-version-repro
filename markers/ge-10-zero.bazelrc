@@ -1,0 +1,2 @@
+# Harmless marker: identify this import via --announce_rc's source filename.
+common --color=no
